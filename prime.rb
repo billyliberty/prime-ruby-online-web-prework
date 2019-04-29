@@ -1,12 +1,11 @@
-def prime?(number)
-  if number < 2
-    return false
-  elsif for i in 2..number-1
-    if number % i == 0
-      return false
-    end
+
+
+def is_prime? (n)
+ for d in 2..(n - 1)
+  if (n % d) == 0
+   return false
   end
-    else
-      return true
-    end
-  end
+ end
+
+ true
+end
