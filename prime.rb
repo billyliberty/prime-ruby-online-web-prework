@@ -1,8 +1,8 @@
 def prime? (number)
     if number <= 1
-      false
+      return false
     elsif number == 2
-      true
+      return true
     else
       (2..number-1).none? { |i| number % i == 0}
     end
